@@ -1,198 +1,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    
-body {
-    background-color: #f4e3f3;
-    font-family:"Playfair Display", serif;
-    height: 100%;
-    margin: 0;
-}
-* {
-    margin: 30;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.títulos {
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-weight: weight;
-    text-align: center;
-    color: rgb(205, 87, 214);
-}
-
-h2 {
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    text-align: left;
-}
-
-.div + .body {
-    text-align: center;
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-}
-
-.div img {
-    display: flex;
-    border: 5px;
-    padding: 10px 10px;
-    margin: 0 auto;
-    width: 1000px;
-    height: 500px;
-}
-
-     .enviosbox {
-        border: 5px black;
-        padding: 10px 10px;
-        margin: 20px;
-        background-color: white;
-     }
-
-    .blockfooter {
-        margin-top: auto;
-        margin-bottom: 1rem;
-        padding: 0.5rem;
-        background-color: white;
-        border: 1px solid black;
-        font-family: Arial, sans-serif;
-        font-size: 16px;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        }
-
-    p {
-        text-align: left;
-    }
-        
-.menufijado {
-    position: sticky;
-    top: 0;
-    right: 0;
-    background-color: white;
-}
 
 
-.container-main-productos {
-    display: flex;
-    flex: row wrap;
-    flex-direction: row;
-    justify-items: center;
-    background-color: black;
-    padding: 2px;
-}
 
-.caja {
-    background-color: white;
-    height: 500px;
-    width: 320px;
-    border: 1px solid black;
-    text-align: center;
-}
 
-.caja img {
-    height: 425px;
-    width: 310px;
-}
 
-.navbar {
-    display: flex;
-    background-color: white;
-    padding: 20px;
-}
 
-.navbar ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    justify-items: center;
-}
+     
 
-.navbar li {
-    margin: 0 15px;
-    justify-content: center;
-}
 
-.navbar a {
-    color: black;
-    text-decoration: none;
-    padding: 0 15px;  
-    display: block; 
-}
 
-.container-index {
-    display: flex;
-}
 
-.sidebar {
-    width: 25%;
-    padding: 20px;
-    background-color: rgb(242, 164, 217);
-}
 
-.img-store {
-    height: 40vh;
-    width: 30vw;
-}
-.conjuntos-lenceria-one {
-  display: flex;
-  flex-flow: row wrap;
-}
 
-.div-grid-container-carrito {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(8,50px);
-    justify-items: stretch;
-    justify-content: space-around;
-    align-items: start;
-    align-content: space-between;
-    gap: 5px;
-}
 
-.item-grid {
-    background-color: lightpink;
-    border: 1px solid black;
-    padding: 20px;
-    text-align: center;
-    gap: 10px;
-}
-
-.comprar {
-    display: block;
-    width: 100%;
-    padding: 1rem;
-    background-color: pink;
-    border: none;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-header {
-    display: grid;
-    grid-template-areas:
-    "logo titulo none";
-}
-
-header img {
-    display: flex;
-    height: 80px;
-    width: 150px;
-    grid-area: "logo";
-}
-
-/*no anda, pero estos son efectos especiales de los botones- 5:6*/
-.button:hover {
-    background-color: blue;
-    color: aquamarine;
-
-}
 
 @media (min-width: 481px) {
     .navbar, .container-main-productos, .container-index, .div-grid-container-carrito {
@@ -215,19 +36,28 @@ header img {
         text-align: center;
         }
 
-    nav.navbar ul {
-        display: flex;
-        flex-direction: row;
-        padding: 0;
-        margin: 0;
-        align-items: center;
+        .menu-icon {
+            display: block;
+            color: white;
         }
 
-        nav.navbar li {
-            margin: 5px 0;
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background: #333;
+            padding: 10px;
+            border-radius: 8px;
         }
 
-        .container-index {
+        .menu-hamburguesa:checked
+        .menu-icon+.nav-links {
+            display: block;
+        }
+        
+        .container-index{
             display: flex;
             flex-direction: column;
         }
@@ -235,6 +65,8 @@ header img {
         .sidebar {
             display: none;
         }
+
+        
 
         .container-main-productos {
             display: flex;
@@ -286,4 +118,7 @@ header h1 {
     align-items: center;
 }
 acá voy a darle estilos a mi buscador de productos*/
+
+
+
 
